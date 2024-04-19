@@ -4,10 +4,10 @@
 npm install
 
 # build do docker
-docker build -t mockserver-express .
+docker build -t express-mockserver .
 
 # executar o docker na porta 1080
-docker run --name mockserver-express -p 1080:1080 mockserver-express
+docker run --name mockserver-express -p 1080:1080 express-mockserver
 
 # testar se o docker está funcional
 npm test server.test.js
